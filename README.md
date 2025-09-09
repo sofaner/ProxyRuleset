@@ -27,10 +27,10 @@
 
 1、使用转换服务时
 
-远程配置：https://raw.githubusercontent.com/sofaner/ProxyRuleset/
+远程配置：https://raw.githubusercontent.com/sofaner/ProxyRuleset/main/Clash/config/CodeBoy_Online_Full.ini
 
 2、或订阅地址后面增加：
 
 ```url
-&config=
+&config=https%3A%2F%2Fraw.githubusercontent.com%2Fsofaner%2FProxyRuleset%2Fmain%2FClash%2Fconfig%2FCodeBoy_Online_Full.ini
 ```
