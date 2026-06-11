@@ -89,7 +89,6 @@ dns:
 # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
   nameserver-policy:
     "+.cloud-nodes.com":
-      - 140.205.1.13
       - 124.221.68.73:1053
 # 代理节点域名解析服务器，仅用于解析代理节点的域名，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
   proxy-server-nameserver:
@@ -98,13 +97,11 @@ dns:
 # 格式同nameserver-policy，仅用于节点域名解析，当且仅当proxy-server-nameserver不为空时生效
   proxy-server-nameserver-policy:
     "+.cloud-nodes.com":
-      - 140.205.1.13
       - 124.221.68.73:1053
 # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信
   fallback:
     - https://1.0.0.1/dns-query
     - https://public.dns.iij.jp/dns-query
-    - tls://8.8.4.4:853
      #- 8.8.8.8 # 谷歌DNS
      #- 1.1.1.1 # Cloudflare DNS
      #- tls://dns.rubyfish.cn:853
