@@ -90,6 +90,8 @@ dns:
   nameserver-policy:
     "+.cloud-nodes.com":
       - 124.221.68.73:1053
+    "+.myqcloud.com":
+      - 124.221.68.73:1053
 # 代理节点域名解析服务器，仅用于解析代理节点的域名，如果不填则遵循 nameserver-policy、nameserver 和 fallback 的配置
   proxy-server-nameserver:
     - 119.29.29.29
@@ -97,6 +99,8 @@ dns:
 # 格式同nameserver-policy，仅用于节点域名解析，当且仅当proxy-server-nameserver不为空时生效
   proxy-server-nameserver-policy:
     "+.cloud-nodes.com":
+      - 124.221.68.73:1053
+    "+.myqcloud.com":
       - 124.221.68.73:1053
 # 后备域名解析服务器，一般情况下使用境外 DNS, 保证结果可信
   fallback:
